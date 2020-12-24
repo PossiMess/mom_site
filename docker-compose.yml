@@ -1,0 +1,13 @@
+version: '2.0'
+
+services:
+  web:
+    image: bitfly/mom_site:1.0
+    command: "sleep 300" 
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/mom_site/app        
+    expose:
+      - "8000"
+
